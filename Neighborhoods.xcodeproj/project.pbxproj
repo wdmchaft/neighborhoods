@@ -44,6 +44,7 @@
 		9CD226A715123B99001AF2A0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD226A615123B99001AF2A0 /* libz.dylib */; };
 		9CD226AB15123D48001AF2A0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD226AA15123D48001AF2A0 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9CD226B515123E44001AF2A0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD226B415123E44001AF2A0 /* libxml2.dylib */; };
+		9CD226C115124ECB001AF2A0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD226C015124ECB001AF2A0 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +118,8 @@
 		9CD226A915123D48001AF2A0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		9CD226AA15123D48001AF2A0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		9CD226B415123E44001AF2A0 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		9CD226C015124ECB001AF2A0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9CD226C2151251A2001AF2A0 /* Prefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD226C115124ECB001AF2A0 /* CoreLocation.framework in Frameworks */,
 				9CD226B515123E44001AF2A0 /* libxml2.dylib in Frameworks */,
 				9CD226A715123B99001AF2A0 /* libz.dylib in Frameworks */,
 				9CD226A515123B93001AF2A0 /* MobileCoreServices.framework in Frameworks */,
@@ -163,6 +167,7 @@
 				9CD2262815123B74001AF2A0 /* asi-http */,
 				9CD226A615123B99001AF2A0 /* libz.dylib */,
 				9CD226B415123E44001AF2A0 /* libxml2.dylib */,
+				9CD226C015124ECB001AF2A0 /* CoreLocation.framework */,
 				9CD226A415123B93001AF2A0 /* MobileCoreServices.framework */,
 				9CD226A215123B8C001AF2A0 /* SystemConfiguration.framework */,
 				9CD226A015123B88001AF2A0 /* CFNetwork.framework */,
@@ -177,11 +182,8 @@
 		9CD2260915123A03001AF2A0 /* Neighborhoods */ = {
 			isa = PBXGroup;
 			children = (
-				9CD2261215123A03001AF2A0 /* AppDelegate.h */,
-				9CD2261315123A03001AF2A0 /* AppDelegate.m */,
-				9CD2261515123A03001AF2A0 /* MainStoryboard.storyboard */,
-				9CD2261815123A03001AF2A0 /* ViewController.h */,
-				9CD2261915123A03001AF2A0 /* ViewController.m */,
+				9CD226B6151246B6001AF2A0 /* Resources */,
+				9CD226B7151246C0001AF2A0 /* Storyboard */,
 				9CD2260A15123A03001AF2A0 /* Supporting Files */,
 			);
 			path = Neighborhoods;
@@ -193,6 +195,7 @@
 				9CD2260B15123A03001AF2A0 /* Neighborhoods-Info.plist */,
 				9CD2260C15123A03001AF2A0 /* InfoPlist.strings */,
 				9CD2260F15123A03001AF2A0 /* main.m */,
+				9CD226C2151251A2001AF2A0 /* Prefs.h */,
 				9CD2261115123A03001AF2A0 /* Neighborhoods-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -287,6 +290,25 @@
 			);
 			name = Reachability;
 			path = Frameworks/Reachability;
+			sourceTree = "<group>";
+		};
+		9CD226B6151246B6001AF2A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9CD2261215123A03001AF2A0 /* AppDelegate.h */,
+				9CD2261315123A03001AF2A0 /* AppDelegate.m */,
+				9CD2261815123A03001AF2A0 /* ViewController.h */,
+				9CD2261915123A03001AF2A0 /* ViewController.m */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9CD226B7151246C0001AF2A0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9CD2261515123A03001AF2A0 /* MainStoryboard.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,6 +517,7 @@
 				9CD2261F15123A03001AF2A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
